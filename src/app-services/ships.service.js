@@ -19,16 +19,16 @@
                 //url  ='https://swapi.co/api/starships/'
 
             }
-            return $http.get(url,{
+            return $http.get(url.replace('http:','https:'),{
                 headers: {
                     'Authorization': 'none'        
                 }
             }).then(function(res){
+            	//StarshipsNext(res.data.next);
                 return res.data;
             });
             
         }
-
        
     }
 })();
