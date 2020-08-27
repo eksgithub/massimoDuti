@@ -16,6 +16,8 @@
             
             if (!url) {
                 url  ='https://swapi.dev/api/starships/'
+                //url  ='https://swapi.co/api/starships/'
+
             }
             return $http.get(url,{
                 headers: {
