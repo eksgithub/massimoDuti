@@ -3,6 +3,7 @@
     'use strict';
     angular
         .module('app')
+        //.module('app', ['angular-err-src'])
         .component('starship', {
             controller: StarshipController,
             templateUrl: './ships/starships-list/starship/starship.component.html',

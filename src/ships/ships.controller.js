@@ -11,7 +11,7 @@
         _this.fetchNext = function ()  {
             var url = _this.lastResponse ? _this.lastResponse.next : null;
 
-            ShipsService.GetStarships(url)
+            ShipsService.CacheFront(url)
             .then(function (data) {
                 _this.starships = _this.starships.concat(data.results);
                 _this.lastResponse = data;
