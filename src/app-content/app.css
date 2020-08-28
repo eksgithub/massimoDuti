@@ -1,4 +1,4 @@
-﻿a {
+a {
     cursor: pointer;
 }
 
@@ -23,3 +23,9 @@
         width: 750px; 
     }
 }
+
+.fichaitem{
+	color: blue;
+	font-size: 17px;
+}
+

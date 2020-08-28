@@ -1,0 +1,62 @@
+<div class="ships">
+    <div class="row">
+        <h1>Ficha</h1>    
+	        <div class="row fichaitem">
+	        	name: 
+	        </div> {{vm.shipAct.name}}
+	        <div class="row fichaitem">
+	        	model:
+	        </div> {{vm.shipAct.model}}
+	        <div class="row fichaitem">
+	        	manufacturer:
+	        </div> {{vm.shipAct.manufacturer}}	        	        	       
+	        <div class="row fichaitem">
+	        	cost_in_credits: 
+	        </div> {{vm.shipAct.cost_in_credits}}
+	        <div class="row fichaitem">
+	        	length:
+	        </div> {{vm.shipAct.length}}
+	        <div class="row fichaitem">
+	        	max_atmosphering_speed:
+	        </div> {{vm.shipAct.max_atmosphering_speed}}	       	       
+	      	<div class="row fichaitem">
+	        	crew:
+	        </div> {{vm.shipAct.crew}}	        	        	       
+	        <div class="row fichaitem">
+	        	passengers: 
+	        </div> {{vm.shipAct.passengers}}
+	        <div class="row fichaitem">
+	        	cargo_capacity:
+	        </div> {{vm.shipAct.cargo_capacity}}
+	        <div class="row fichaitem">
+	        	consumables:
+	        </div> {{vm.shipAct.consumables}}
+	      	<div class="row fichaitem">
+	        	hyperdrive_rating:
+	        </div> {{vm.shipAct.hyperdrive_rating}}	        	        	       
+	        <div class="row fichaitem">
+	        	MGLT: 
+	        </div> {{vm.shipAct.MGLT}}	        	        	       
+	        <div class="row fichaitem">
+	        	starship_class: 
+	        </div> {{vm.shipAct.starship_class}}
+	      	<div class="row fichaitem">
+	        	pilots: 
+	        </div>	        	
+	        <div>
+		        <div ng-repeat="item in vm.shipAct.pilots" >
+		        	<div>{{item}}</div>
+		        </div>
+	        </div>
+	      	<div class="row fichaitem">
+	        	films: 
+	        </div>	        
+	      	<div>
+		        <div ng-repeat="item in vm.shipAct.films">
+		        	<div>{{item}}</div>
+		        </div>
+	        </div>
+    </div>
+</div>
+
+<button ng-click="vm.atras()" ngclass="btn btn-primary">Volver</button>

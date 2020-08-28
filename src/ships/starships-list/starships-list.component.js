@@ -11,6 +11,8 @@
             onFetchNextPage: '&'
         }
     })
+    
+    var showDetail = false;
     function StarshipsListController($scope) {
         var ctrl = this;
         ctrl.fetchNextPage = function () {

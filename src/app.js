@@ -24,6 +24,13 @@
     config.$inject = ['$routeProvider', '$locationProvider'];
     function config($routeProvider, $locationProvider) {
         $routeProvider
+	        .when('/shipsdetail', {
+	            controller: 'ShipsdetailController',
+	            //templateUrl: 'ships/starships-list/starship/starships-detail/starship-detail.html',
+	            templateUrl: 'ships/starships-list/starship/starship-detail/starship-detail.html',
+	            controllerAs: 'vm'
+	            
+	        })
             .when('/ships', {
                 controller: 'ShipsController',
                 templateUrl: 'ships/ships.view.html',
